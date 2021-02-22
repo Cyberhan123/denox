@@ -1,3 +1,4 @@
+import { type } from "os";
 import { DenoOptionValue } from "../interfaces.ts";
 
 type TypeOfValues =
@@ -37,4 +38,5 @@ function _typeoffNumberAsString(value: unknown): TypeOfValues {
   return typeof value;
 }
 
-export { getOptionType, OptionTypeValues };
+export { getOptionType };
+export type {OptionTypeValues};

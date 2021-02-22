@@ -1,6 +1,7 @@
 import { DenoOptionsEntries, DenoOptionValue } from "../interfaces.ts";
 import { getOptionType, OptionTypeValues } from "./utils.ts";
 import { optionsDefinitions } from "./const.ts";
+import { type } from "os";
 
 type CLIArgument = string | number | [string, number];
 type hashCliArgType = { name: string; value: string | boolean | number };
@@ -72,4 +73,5 @@ function _transformToArgHash(
   };
 }
 
-export { buildDenoCLIOptionsArgs, CLIArgument };
+export { buildDenoCLIOptionsArgs };
+export type {CLIArgument}

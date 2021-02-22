@@ -1,3 +1,5 @@
+import { type } from "os";
+
 type DenoOptionValue = unknown;
 
 type DenoOptionsEntries = {
@@ -21,7 +23,7 @@ type DenoWorkspace = {
   globals?: WorkspaceGlobal;
 };
 
-export {
+export type {
   DenoWorkspace,
   WorkspaceGlobal,
   WorkspaceScript,
