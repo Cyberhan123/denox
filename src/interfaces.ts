@@ -1,5 +1,3 @@
-import { type } from "os";
-
 type DenoOptionValue = unknown;
 
 type DenoOptionsEntries = {

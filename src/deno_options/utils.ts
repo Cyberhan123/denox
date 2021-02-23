@@ -1,4 +1,3 @@
-import { type } from "os";
 import { DenoOptionValue } from "../interfaces.ts";
 
 type TypeOfValues =
